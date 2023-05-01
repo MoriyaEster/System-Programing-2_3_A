@@ -26,38 +26,38 @@ namespace ariel
         }
 
         // Operators
-        const Fraction operator+(const Fraction &other) const;
-        const Fraction operator-(const Fraction &other) const;
-        const Fraction operator*(const Fraction &other) const;
-        const Fraction operator/(const Fraction &other) const;
-        bool operator==(const Fraction &other) const;
-        bool operator!=(const Fraction &other) const;
-        bool operator<(const Fraction &other) const;
-        bool operator>(const Fraction &other) const;
-        bool operator<=(const Fraction &other) const;
-        bool operator>=(const Fraction &other) const;
+        Fraction operator+(const Fraction &other);
+        Fraction operator-(const Fraction &other);
+        Fraction operator*(const Fraction &other);
+        Fraction operator/(const Fraction &other);
+        bool operator==(const Fraction &other);
+        bool operator!=(const Fraction &other);
+        bool operator<(const Fraction &other);
+        bool operator>(const Fraction &other);
+        bool operator<=(const Fraction &other);
+        bool operator>=(const Fraction &other);
 
-        const Fraction operator+(const float other) const;
-        const Fraction operator-(const float other) const;
-        const Fraction operator*(const float other) const;
-        const Fraction operator/(const float other) const;
-        bool operator==(const float other) const;
-        bool operator!=(const float other) const;
-        bool operator<(const float other) const;
-        bool operator>(const float other) const;
-        bool operator<=(const float other) const;
-        bool operator>=(const float other) const;
+        Fraction operator+(const float other);
+        Fraction operator-(const float other);
+        Fraction operator*(const float other);
+        Fraction operator/(const float other);
+        bool operator==(const float other);
+        bool operator!=(const float other);
+        bool operator<(const float other);
+        bool operator>(const float other);
+        bool operator<=(const float other);
+        bool operator>=(const float other);
 
-        friend const Fraction operator+(const float num, const Fraction &frac);
-        friend const Fraction operator-(const float num, const Fraction &frac);
-        friend const Fraction operator*(const float num, const Fraction &frac);
-        friend const Fraction operator/(const float num, const Fraction &frac);
-        friend bool operator==(const float num, const Fraction &frac);
-        friend bool operator!=(const float num, const Fraction &frac);
-        friend bool operator<(const float num, const Fraction &frac);
-        friend bool operator>(const float num, const Fraction &frac);
-        friend bool operator<=(const float num, const Fraction &frac);
-        friend bool operator>=(const float num, const Fraction &frac);
+        friend Fraction& operator+(const float num, Fraction &frac);
+        friend Fraction& operator-(const float num, Fraction &frac);
+        friend Fraction& operator*(const float num, Fraction &frac);
+        friend Fraction& operator/(const float num, Fraction &frac);
+        friend bool operator==(const float num, Fraction &frac);
+        friend bool operator!=(const float num, Fraction &frac);
+        friend bool operator<(const float num, Fraction &frac);
+        friend bool operator>(const float num, Fraction &frac);
+        friend bool operator<=(const float num, Fraction &frac);
+        friend bool operator>=(const float num, Fraction &frac);
 
         Fraction& operator++();
         Fraction& operator--();

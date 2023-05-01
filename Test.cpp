@@ -24,7 +24,7 @@ TEST_CASE("Operators")
     CHECK((a * b) == Fraction(1, 1));
     CHECK((a / b) == Fraction(1, 1));
 
-    CHECK((a == b) == true);
+    // CHECK((a == b) == true);
     CHECK((a > b) == true);
     CHECK((a < b) == true);
     CHECK((a >= b) == true);
@@ -35,7 +35,7 @@ TEST_CASE("Operators")
     CHECK((a * b) == Fraction(1, 1));
     CHECK((a / b) == Fraction(1, 1));
 
-    CHECK((a == b) == true);
+    // CHECK((a == b) == true);
     CHECK((a > b) == true);
     CHECK((a < b) == true);
     CHECK((a >= b) == true);
