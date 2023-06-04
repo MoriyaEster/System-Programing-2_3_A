@@ -41,7 +41,6 @@ TEST_CASE("operator+ and operator- with names"){
     Fraction one_half(3,2);
     Fraction two_half(5,2);
 
-
     CHECK_EQ(one - one, zero);
     CHECK_EQ(one - 1, zero);
     CHECK_EQ(2.5 - one, one_half);
